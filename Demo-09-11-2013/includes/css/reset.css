@@ -1,0 +1,57 @@
+/* This style sheet is used to reset the browser to default setting */
+body {
+	font:13px/1.231 Arial, Helvetica, sans-serif;
+	*font-size:small;
+	background: url(../images/site_bg.jpg) repeat-x scroll 0 0 transparent;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border-style:none;
+	outline:0;
+	vertical-align:none;
+	background:transparent;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul, ul { list-style:none; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+del { text-decoration: line-through; }
+table { border-collapse:collapse; border-spacing:0; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+address, caption, cite, code, dfn, var {
+	font-style:normal;
+	font-weight:normal;
+}
+caption {text-align:left;}
+input, textarea, select{
+	font: 100% Arial, Tahoma, sans-serif;
+	vertical-align:middle;
+	outline:none;
+}
+input:focus, textarea:focus {outline:none;}
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility: hidden;
+}

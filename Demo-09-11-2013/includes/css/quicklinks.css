@@ -1,0 +1,110 @@
+/* This CSS Contains styles for Quick Links */
+
+a {
+	text-decoration: none;
+}
+.newsQuick a {
+	width: 132px;
+}
+.Quicklinks {
+	float:right;
+	margin-top:30px;
+	width: 320px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 2px 2px 6px #BBBBBB;
+}
+.QuicklinksT li {
+	width: 159px;
+	border-bottom: 1px solid #DDDDDD;
+}
+.QuicklinksE li {
+	border-bottom: 1px solid #DDDDDD;
+	margin:0 10px;
+}
+.QuicklinksE li.last {
+	margin:0 10px;
+}
+.box .container {
+	width: 320px;
+	border-left: 1px solid #CCCCCC;
+	float: left;
+	margin: -7px 0 -2px;
+	position: relative;
+	width: 100%;
+}
+.withArrow {
+	background: url("../images/icn/icn_arrow.png") no-repeat scroll 100% 4px transparent;
+	color: #006666;
+	cursor: pointer;
+	font-size: 12px;
+	line-height: 27px;
+	margin-right: 10px;
+	padding-right: 12px;
+	text-decoration: none;
+}
+.btnMore {
+	color: white;
+	font: 10px Tahoma, Geneva, sans-serif;
+	vertical-align: baseline;
+}
+.tabset {
+    border-top: 1px solid #CCCCCC;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    z-index: 6;
+}
+.tabset li {
+    border-right: 1px solid #CCCCCC;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.tabset li.lastChild {
+    border-right: medium none;
+}
+.tabset a {
+    color: #999999;
+    float: left;
+    height: 25px;
+    margin: 0 0 -8px;
+    outline: medium none;
+    padding: 12px 14px 8px;
+    position: relative;
+    text-align: center;
+	width:132px;
+}
+.tabset a:hover {
+    background: url("../images/bg/tabset_el.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+	width:132px;
+	//width:159px;
+}
+.tabset .active a {
+    background: url("../images/bg/tabset_el.png") no-repeat scroll 50% -46px transparent;
+    color: #FFFFFF;
+}
+.tabset .active a:hover {
+    text-decoration: none;
+}
+.box .grid_4 {
+    margin: 0;
+    z-index: 5;
+}
+
+
+ul, ul {
+	list-style: none outside none;
+}
+.QuicklinksT li {
+	width: 159px;
+}
+.QuicklinksT .active a {
+	width: 132px;
+}
+.box .content {
+	color: #666666;
+	padding: 13px 15px 0;
+}

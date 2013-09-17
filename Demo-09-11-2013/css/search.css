@@ -1,0 +1,159 @@
+/* This style sheet contain styles for the Search area in the HTML */ 
+.ss-gac-m {
+	color: #00CCCC;
+	/*background-image: linear-gradient(bottom, rgb(67,66,66) 18%, rgb(104,104,104) 64%);
+	background-image: -o-linear-gradient(bottom, rgb(67,66,66) 18%, rgb(104,104,104) 64%);
+	background-image: -moz-linear-gradient(bottom, rgb(67,66,66) 18%, rgb(104,104,104) 64%);
+	background-image: -webkit-linear-gradient(bottom, rgb(67,66,66) 18%, rgb(104,104,104) 64%);
+	background-image: -ms-linear-gradient(bottom, rgb(67,66,66) 18%, rgb(104,104,104) 64%);
+	background-image: -webkit-gradient(linear,left bottom,left top,
+	color-stop(0.18, rgb(67,66,66)),
+	color-stop(0.64, rgb(104,104,104)));*/
+	background-image: url("includes/images/bg/bg_searchsuggestions.gif");
+	background-repeat: repeat-x;
+	border: 0 none;
+	cursor: default;
+	font-size: 13px;
+	line-height: 17px;
+	margin: 0;
+	position: absolute;
+	z-index: 999;
+}
+.ss-gac-b {
+	color: #00CCCC;
+	background: none;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.ss-gac-c {
+	color: #00CCCC !important;
+	font-style: normal;
+	overflow: hidden;
+	padding-left: 3px;
+	padding-top: 2px;
+	text-align: left;
+	white-space: nowrap;
+}
+.ss-gac-d {
+	color: #00CCCC;
+	font-size: 10px;
+	overflow: hidden;
+	padding: 0 3px;
+	text-align: right;
+	white-space: nowrap;
+	text-decoration: none !important;
+}
+.ss-gac-b td {
+	color: #00CCCC !important;
+	text-decoration: none !important;
+}
+.ss-gac-e td {
+	color: #00CCCC !important;
+	font-size: 10px;
+	line-height: 15px;
+	padding: 0 3px 2px;
+	text-align: right;
+}
+.ss-gac-e span {
+	color: #ffffff;
+	cursor: pointer;
+	text-decoration: underline;
+}
+/* Debug console */
+ 
+div#ss_debug_console {
+	background: #ffefef;
+	border: 1px solid #cf7f7f;
+	bottom: 2%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 83%;
+	height: 60%;
+	left: 5%;
+	opacity: 0.95;
+	overflow: auto;
+	padding: 0.5em;
+	position: absolute;
+	width: 90%;
+	z-index: 5000;
+}
+div#ss_debug_console.expanded {
+	height: 60%;
+}
+div#ss_debug_console.contracted {
+	height: 8%;
+}
+div#ss_debug_console h1 {
+	color: #af0000;
+	display: inline;
+	font-size: 100%;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+div#ss_debug_console button {
+	margin: 0em 0.5em;
+}
+div#ss_debug_console table {
+	border-collapse: collapse;
+	font-size: 90%;
+	line-height: 120%;
+	margin-top: 1em;
+}
+div#ss_debug_console table th {
+	padding: 0.2em 1em;
+	text-align: left;
+}
+div#ss_debug_console table td {
+	border-top: 1px solid #cf7f7f;
+	padding: 0.2em 1em;
+}
+div#ss_debug_console table td.no {
+	text-align: right;
+}
+table.stx-searchtabs td {
+	margin: 5px
+}
+table.stx-searchtabs td.off a {
+	margin: 5 5 5 5px
+}
+table.stx-searchtabs td.on a {
+	background: #cccccc;
+	color: #000000;
+	margin: 5 5 5 5px
+}
+table.stx-searchtabs td.on {
+	background: #cccccc;
+	color: #000000;
+	margin: 5px;
+}
+table.stx-searchtabs td.on a:hover {
+	color: #000000
+}
+.searchFieldInput {
+	font-family: "Arial", "Helvetica", "Verdana", "Sans-serif";
+	font-size: 14px;
+	color: #000000;
+}
+.searchLink:visited, .searchLink:link, .searchLink:hover {
+	color: #ffffff;
+	font-family: "Verdana", "Arial", "Helvetica", Sans-serif;
+	font-size: 12px;
+}
+.searchLink:active {
+	color: #000000;
+	font-family: "Verdana", "Arial", "Helvetica", Sans-serif;
+	font-size: 12px;
+}
+.searchOnLink:visited, .searchOnLink:link, .searchOnLink:hover {
+	color: #000000;
+	font-family: "Verdana", "Arial", "Helvetica", Sans-serif;
+	font-size: 12px;
+}
+.searchOnLink:active {
+	color: #000000;
+	font-family: "Verdana", "Arial", "Helvetica", Sans-serif;
+	font-size: 12px;
+}
+.stx-searchbox {
+	border: 2px solid #cccccc;
+}

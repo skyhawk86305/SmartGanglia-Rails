@@ -1,0 +1,121 @@
+/* This CSS Contains styles for Tabbing */
+
+#tabbed_section {
+	width: 80%;
+	background: #FFF;
+	border: 1px solid #B1B1B1;
+}
+#tabbed_section ol {
+	overflow: hidden;
+	zoom: 1;
+}
+#tabbed_section ol li {
+	float: left;
+	background-image: url("../images/newstab_bg.gif");
+	background-repeat: repeat-x;
+	border-bottom: 1px solid #B1B1B1;
+	border-right: 1px solid #B1B1B1;
+	width: auto;
+	line-height: 120%;
+	list-style:none;
+}
+#tabbed_section ol li a {
+	font-size: 12px;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: #FFF;
+	text-align: center;
+}
+#tabbed_section ol li a:hover {
+	color: #ffffff;
+	background-image: url("../images/tab_bg_over.gif");
+	background-repeat: repeat-x;
+	outline: none;
+}
+#tabbed_section ol li a.last_link {
+	border-right: none;
+}
+#tabbed_section ol li.active a {
+	color: #ffffff;
+	background-image: url("../images/tab_bg_over.gif");
+	background-repeat: repeat-x;
+	outline: none;
+}
+#tabbed_content {
+	padding: 1em 0 0 0;
+	margin: 0 auto;
+	background: #FFF;
+	position: relative;
+	-moz-box-shadow: 3px 1px 3px #ccc;
+}
+#tabbed_content div {
+	background: #FFF;
+	z-index: 8;
+	overflow: hidden;
+}
+#tabbed_content div.active {
+	z-index: 9;
+}
+#news_hold {
+	width: 100%;
+	height: 100%;
+	background-color: #ccc;
+}
+table.newstabbing_menu{
+	border-collapse:separate;
+	border-spacing:10px;
+}
+table.newstabbing_menu tr {
+	padding: 0px;
+	margin: 0px;
+}
+table.newstabbing_menu tr td.topics {
+	border-bottom: thin solid #d3d3d3;
+	min-height: 20px;
+	background-image: url("../images/td_bg.gif");
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-left: 15px;
+	padding-bottom: 5px;
+}
+table.newstabbing_menu tr td.topics_last {
+	min-height: 20px;
+	background-image: url("../images/td_bg.gif");
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-left: 15px;
+	padding-bottom: 5px;
+}
+table.newstabbing_menudown tr td.other_stories {
+	background-image: url("../images/td_otherstoriesbg.gif");
+	background-repeat: no-repeat;
+	border-top: thin solid #d3d3d3;
+	min-height: 20px;
+	text-align: right;
+	padding-right: 15px;
+	padding: 15px 20px 5px;
+	//background-color:#F00;
+}
+table.newstabbing_menudown a.otherlinks {
+	color: #1a8686;
+	font-weight: bold;
+	text-decoration: none;
+}
+table.newstabbing_menudown a:hover.otherlinks {
+	color: #1a8686;
+	font-weight: bold;
+	text-decoration: underline;
+}
+table.newstabbing_menu a.newslinks {
+	color: #1a8686;
+	font-weight: bold;
+	text-decoration: none;
+}
+table.newstabbing_menu a:hover.newslinks {
+	color: #1a8686;
+	font-weight: bold;
+	text-decoration: underline;
+}
+/* CSS Document */
+

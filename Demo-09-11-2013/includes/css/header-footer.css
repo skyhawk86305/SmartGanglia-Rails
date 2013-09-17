@@ -1,0 +1,1178 @@
+/* This style sheet contain styles for the Header-Footer area in the HTML */
+a {
+	color: #006666;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:focus {
+	outline: none;
+}
+/* header */
+#header {
+	width: 100%;
+	z-index: 20;
+}
+.headerWrap {
+	position: relative;
+	z-index: 50;
+	background: url(<%=asset_path "bg/header.jpg"%>) repeat-x;
+}
+.headerFrame {
+	background: url(<%=asset_path "bg/header_center.jpg"%>) no-repeat 50% 0;
+}
+.headerBar {
+	width: 980px;
+	margin: 0 auto;
+	padding: 0 0 9px;
+	position: relative;
+}
+/* sub nav */
+.subNav {
+	float: right;
+	overflow: hidden;
+	display: inline;
+}
+.subNav li {
+	float: left;
+	display: inline;
+	padding: 10px 9px;
+	font-size: 11px;
+	line-height: 14px;
+	background: url(<%=asset_path "bg/nav_lang_sep.gif"%>) no-repeat 0 50%;
+}
+.subNav li:first-child {
+	background: none;
+}
+.subNav2 {
+	float: right;
+	overflow: hidden;
+	display: inline;
+}
+.subNav2 li {
+	float: left;
+	display: inline;
+	padding: 10px 9px;
+	font-size: 11px;
+	line-height: 14px;
+	background: url(<%=asset_path "bg/nav_lang_sep2.gif"%>) no-repeat 0 60%;
+}
+.subNav2 li:first-child {
+	background: none;
+}
+.accountHold {
+	position: relative;
+	overflow: visible;
+	z-index: 10;
+	font-size: 11px;
+	line-height: 14px;
+}
+.accountHold li {
+	padding: 0;
+}
+.accountHold li:first-child {
+	padding-right: 2px;
+}
+.accountHold li.accountDrop {
+	margin: 0;
+	height: 16px;
+}
+.accountHold li.accountInfoDrop {
+	background: none;
+	padding-top: 6px;
+}
+.accountHold li.leftAccountInfoDrop {
+	background: none;
+}
+.accountHold .accountInfo {
+	background: url(<%=asset_path "icn/icn_arrow_down_sprite_white.png"%>) no-repeat -159px 4px;
+	display: block;
+	text-indent: -99999px;
+	width: 24px;
+	padding: 6px 0px 3px 5px;
+	height: 17px;
+	margin-top: -6px;
+}
+.accountHold li:hover .accountInfo {
+	background-position: -159px -56px;
+	cursor: default;
+}
+.accountHold .leftAccountInfo {
+	display: block;
+	width: 24px;
+	height: 20px;
+	background: url(<%=asset_path "icn/icn_arrow_down_sprite_white.png"%>) no-repeat -128px -20px;
+	cursor: default;
+	text-decoration: none;
+}
+.accountHold li:hover .leftAccountInfo {
+	background-position: -128px -51px;
+	cursor: default;
+	text-decoration: none;
+}
+.accountHold .accountCog {
+	display: block;
+	text-indent: -99999px;
+	width: 29px;
+	height: 20px;
+	background: url(<%=asset_path "icn/icn_cog_sprite.png"%>) no-repeat 7px 4px;
+}
+.accountHold li:hover .accountCog {
+	cursor: default;
+	background: url(<%=asset_path "icn/icn_cog_sprite.png"%>) no-repeat -53px 4px #6d6d6d;
+	padding-bottom: 2px;/*background-position: -53px 4px; /*with drop down */
+	/*background-position: -23px 0; /*without drop down */
+}
+/* Account drop down */
+.accountHold .drop {
+	position: absolute;
+	top: 25px;
+	right: 29px;
+	z-index: 999;
+	visibility: hidden;
+	min-width: 120px;
+	padding: 0;
+	background: #6d6d6d;
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6d6d6d', endColorstr='#545454');
+	background: -webkit-gradient(linear, left top, left bottom, from(#6d6d6d), to(#545454));
+	background: -moz-linear-gradient(top, #6d6d6d, #545454);
+}
+.accountHold .dropFeedback {
+	position: absolute;
+	top: 22px;
+	right: 0px;
+	z-index: 999;
+	visibility: hidden;
+	min-width: 120px;
+	padding: 0;
+	background: #6d6d6d;
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6d6d6d', endColorstr='#545454');
+	background: -webkit-gradient(linear, left top, left bottom, from(#6d6d6d), to(#545454));
+	background: -moz-linear-gradient(top, #6d6d6d, #545454);
+}
+/* top left drop down */
+.accountHold .leftDrop {
+	position: absolute;
+	top: 10;
+	right: 10px;
+	z-index: 999;
+	margin-top: 0px;
+	visibility: hidden;
+	min-width: 120px;
+	padding: 0 0 10px 10px;
+	background: #6d6d6d;
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6d6d6d', endColorstr='#545454');
+	background: -webkit-gradient(linear, left top, left bottom, from(#6d6d6d), to(#545454));
+	background: -moz-linear-gradient(top, #6d6d6d, #545454);
+}
+.accountHold .accountDrop:hover .drop {
+	visibility: visible;
+}
+.accountHold .accountDrop:hover .dropFeedback {
+	visibility: visible;
+}
+.accountHold .accountDrop:hover .leftDrop {
+	visibility: visible;
+}
+.accountHold .accountDrop .drop ul li {
+	background: none;
+	line-height: 16px;
+	text-align: right;
+	float: none;
+	display: block;
+}
+.accountHold .accountDrop .dropFeedback ul li {
+	background: none;
+	line-height: 16px;
+	text-align: right;
+	float: none;
+	display: block;
+}
+.accountHold .accountDrop .drop li a {
+	padding: 3px 25px 5px 0;
+	display: block;
+}
+.accountHold .accountDrop .drop li a:hover {
+}
+.accountHold .accountDrop .dropFeedback li a {
+	padding: 3px 25px 3px 0;
+	display: block;
+}
+.accountHold .accountDrop .dropFeedback li a:hover {
+}
+.accountHold .accountDrop .leftDrop ul li {
+	background: none;
+	line-height: 16px;
+	text-align: right;
+	float: none;
+	display: block;
+}
+.accountHold .accountDrop .leftDrop li a {
+	padding: 0px 8px 0px 0;
+	display: block;
+}
+.accountHold .accountDrop .leftDrop li a:hover {
+}
+.accountHold, .accountHold a {
+	color: #fff;
+}
+a.accountHoldNew {
+	color: #ffffff;
+	text-decoration: none;
+	cursor: default;
+}
+a.accountHoldNew:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+/* google links */
+.googleLinks {
+	float: left;
+	margin: -3px 6px 0 -7px;
+}
+.googleLinks li a {
+	color: #fff;
+}
+/* logo */
+#header strong.logo {
+	float: left;
+	display: inline;
+	margin: 13px 0 0 1px;
+	clear: left;
+}
+#header strong.logo a {
+	display: block;
+	width: 131px;
+	height: 42px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(<%=asset_path "bg/logo.png"%>) no-repeat;
+}
+/* searchForm */
+
+.searchHold {
+	float: right;
+	clear: right;
+}
+.searchDrop {
+	margin: 0 -8px 0 6px;
+	position: static;
+	z-index: 10;
+	clear: right;
+	float: right;
+	color: #00cccc;
+	height: 28px;
+	padding: 2px 0 0;
+}
+.searchDrop dt {
+	float: left;
+	font-size: 11px;
+	line-height: 28px;
+	padding: 0 9px;
+	background: url(<%=asset_path "bg/nav_lang_sep.gif"%>) no-repeat 100% 50%;
+}
+.searchDrop dt span {
+	cursor: default;
+}
+.searchDrop dt a {
+	line-height: 28px;
+	display: block;
+	color: #fff;
+	cursor: pointer;
+}
+.searchDrop dt a span {
+	cursor: pointer;
+}
+.searchDrop dt.searchMoreDrop {
+	cursor: pointer;
+	background: none;
+	padding: 0;
+	vertical-align : none;
+}
+.searchDrop dt.searchMoreDrop a, .searchDrop dt.searchMoreDrop span {
+	padding: 0 9px;
+	display: block;
+	line-height: 28px;
+}
+.searchDrop dt.searchMoreDrop .searchMoreHover {
+	background: #6d6d6d;
+	cursor: default;
+	text-decoration: none;
+}
+.searchDrop dt.searchMoreDrop span.searchMoreHover {
+	color: #fff;
+}
+.searchDrop dt.searchMoreDrop a span {
+	padding: 0;
+}
+.searchDrop dd {
+	position: relative;
+	text-align: right;
+}
+.searchDrop dd ul {
+	font-size: 11px;
+	display: none;
+	position: absolute;
+	z-index: 10;
+	top: 28px;
+	right: 0;
+	width: auto;
+	min-width: 120px;
+	background: #6d6d6d;
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6d6d6d', endColorstr='#404040');
+	background: -webkit-gradient(linear, left top, left bottom, from(#6d6d6d), to(#404040));
+	background: -moz-linear-gradient(top, #6d6d6d, #404040);
+}
+.searchDrop span.value {
+	display: none;
+}
+.searchDrop dd ul li {
+	padding: 5px 30px 5px 30px;
+}
+.searchDrop dd ul li a {
+	display: block;
+	color: #fff;
+}
+.searchDrop dd ul li a:hover {
+}
+
+/* search more drop*/
+.searchMoreDrop .drop {
+	position: absolute;
+	top: 22px;
+	right: 0;
+	z-index: 999;
+	visibility: hidden;
+	min-width: 120px;
+	padding: 0 0 10px 10px;
+	background: #6d6d6d;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6d6d6d', endColorstr='#545454');
+	background: -webkit-gradient(linear, left top, left bottom, from(#6d6d6d), to(#545454));
+	background: -moz-linear-gradient(top, #6d6d6d, #545454);
+}
+.searchMoreDrop:hover .drop {
+	visibility: visible;
+}
+.searchMoreDrop .drop ul li {
+	background: none;
+	line-height: 16px;
+	text-align: right;
+	float: none;
+	display: block;
+	padding: 0;
+}
+.searchMoreDrop .drop li a {
+	padding: 2px 16px 4px 0;
+	display: block;
+	line-height: 16px;
+}
+.searchMoreDrop .drop li a:hover {
+	color: #00cccc;
+}
+/* search input */
+#searchInput {
+	float: right;
+	width: 305px;
+	padding: 0 1px 0 11px;
+	height: 26px;
+	background: url(<%=asset_path "bg/search_form_26h.jpg"%>) no-repeat;
+	position: relative;
+	z-index: 8;
+	clear: right;
+}
+#searchInput label {
+	display: none;
+}
+#searchInput input {
+	border: none;
+}
+#searchInput input.text {
+	float: left;
+	width: 278px;
+	line-height: 26px;
+	height: 26px;
+	font-size: 11px;
+	color: #666;
+	font-weight: bold;
+	background: none;
+	border: none;
+	position: relative;
+	z-index: 3;
+	padding: 0;
+}
+#searchInput input.submit {
+	float: right;
+	border: none;
+	padding: 0;
+	margin: 0;
+	width: 22px;
+	height: 24px;
+	font-size: 0;
+	overflow: hidden;
+	text-indent: -9999px;
+	letter-spacing: -9999px;
+	cursor: pointer;
+	background: url(<%=asset_path "btn/btn_search_24h.png"%>) no-repeat;
+	position: relative;
+	z-index: 3;
+}
+/* main nav */
+.mainNav {
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 10;
+}
+.mainNavHold {
+	width: 978px;
+	border: solid #565656;
+	border-width: 2px 1px 1px;
+	background: url(<%=asset_path "bg/main_nav.gif"%>) repeat-x 15px 0;
+}
+.mainNav ul li {
+	float: left;
+	width: 162px;
+	padding-left: 1px;
+	height: 45px;
+	font-size: 12px;
+	line-height: 16px;
+	position: relative;
+	background: url(<%=asset_path "bg/main_nav_sep.gif"%>) no-repeat;
+}
+.mainNav li.navHome {
+	background: none;
+	padding-left: 0;
+	width: 163px;
+	background: url(<%=asset_path "bg/main_nav.gif"%>) no-repeat 160px -45px;
+}
+.mainNav li:hover {
+	position: relative;
+}
+.mainNav ul a.mainNavPrimaryItem {
+	display: block;
+	height: 28px;
+	padding: 8px 12px 9px 12px;
+	overflow: hidden;
+	color: #fff;
+	background: url(<%=asset_path "bg/main_nav.gif"%>) no-repeat 0 -45px;
+	vertical-align: bottom;
+}
+.mainNav ul a.mainNavPrimaryItemSelected {
+	display: block;
+	height: 28px;
+	padding: 8px 12px 9px 12px;
+	overflow: hidden;
+	color: #fff;
+	background-color: #cccccc;
+	vertical-align: bottom;
+}
+.mainNav li:hover a.mainNavPrimaryItem {
+	background: url(<%=asset_path "bg/nav_hov_drop.gif"%>) repeat-x scroll 0 0;
+}
+.mainNav li.active a.mainNavPrimaryItem {
+	background-position: 100% -45px;
+}
+.mainNav li.navHome a.mainNavPrimaryItem {
+	background-position: 0 0;
+}
+.mainNav ul li span {
+	cursor: pointer;
+	display: table-cell;
+	height: 28px;
+	font-style: normal;
+	vertical-align: bottom;
+	padding: 0 12px 0 0;
+	background: url(<%=asset_path "icn/icn_arrow_down_9x6.png"%>) no-repeat 100% 85%;
+}
+.mainNav ul li.navHome span {
+	background: none;
+}
+.mainNav ul li.navHorzNoArrow span {
+	background: none;
+}
+.mainNav li a:hover.mainNavPrimaryItem span {
+	text-decoration: underline;
+	color: #0cc;
+}
+.mainNav li:hover .drop {
+	display: block;
+}
+.mainNav .drop {
+	position: absolute;
+	left: -1px;
+	top: 45px;
+	display: none;
+	color: #fff;
+	background: url(<%=asset_path "bg/drop_outline.gif"%>) repeat-x scroll 0 0 #515151;
+	padding: 0 1px 1px;
+}
+.mainNav .drop a {
+	display: block;
+	color: #fff;
+}
+.mainNav .drop a:hover {
+	color: #00cccc;
+}
+.mainNav .navDirectory .drop, .mainNav .navMyPage .drop {
+	left: auto;
+	right: -1px;
+	top: 45px;
+}
+.mainNav .dropHold {
+	padding: 0 1px;
+ //background: url(<%=asset_path "bg/drop_c.gif"%>) repeat-x scroll 0 0 #2e2e2e;
+	background: url(<%=asset_path "bg/drop_c_hold.gif"%>) repeat-x scroll 0 0 #2e2e2e;
+}
+.mainNav .navDirectory .dropHold {
+	padding: 20px;
+}
+.mainNav .drop ul.dropMainList {
+	position: relative;
+	width: 244px;
+	padding: 10px 0;
+}
+.mainNav .drop ul li {
+	float: none;
+	display: block;
+	height: auto;
+	margin-right: -1px;
+	padding: 0 15px 0 13px;
+	width: auto;
+	position: static;
+	vertical-align: top;
+	background: none;
+	zoom: 1;
+}
+.mainNav .drop ul.subTabset li a, .mainNav .drop ul.dropMainList li a {
+	font-size: 12px;
+	line-height: 18px;
+	height: auto;
+	font-weight: normal;
+	width: auto;
+	padding: 9px 0 8px;
+	background: url(<%=asset_path "bg/drop_sep.gif"%>) repeat-x;
+}
+.mainNav .drop .tabBox {
+	float: left;
+	padding-bottom: 13px;
+	background: url(<%=asset_path "bg/main_nav_sep.gif"%>) repeat-y 242px 0;
+}
+.mainNav .drop ul.dropMainList li:first-child a {
+	background: none;
+}
+.mainNav .drop ul.dropListWithHeading li {
+	padding: 8px 0;
+	margin-left: 1.5em
+}
+.mainNav .drop ul li.dropSubHeading {
+	margin-left: 0;
+	padding: 8px 1.5em 0 0;
+	border-bottom: none;
+}
+.mainNav .drop .dropTable {
+}
+.mainNav .drop .dropTable td {
+	vertical-align: top;
+	color: #fff;
+}
+.mainNav .drop .dropTable td.end-tag {
+	vertical-align: top;
+	color: #fff;
+}
+.mainNav .drop .dropTable td.gilma {
+}
+.mainNav .drop .dropTable a {
+	width: 232px;
+	padding: 6px 4px 2px 4px;
+	display: block;
+	line-height: 18px;
+}
+p.drop-menu-p-tags {
+	line-height: 10px;
+}
+.mainNav .drop .dropTable span {
+	display: block;
+	padding: 0 0 0 1.5em;
+	height: auto;
+	background: none;
+}
+.mainNav .drop table.dropTable td.tableEmptyGap {
+	border: none;
+}
+.mainNav .drop table.dropTable td.tableEmptyGap div {
+	width: 12px;
+	padding: 0;
+}
+.mainNav .navDirectory .dropTable p {
+	color: #FFFFFF;
+	line-height: normal;
+	padding: 4px 18px;
+}
+.mainNav .navDirectory .dropTable p a {
+	display: inline;
+	width: auto;
+	padding: 0;
+}
+.mainNav .drop ul a span {
+	float: none;
+	height: auto;
+	width: auto;
+	padding: 0 20px 0 0;
+	display: block;
+	background: url(<%=asset_path "btn/btn_home_sprite.png"%>) no-repeat 200px -647px;
+}
+.mainNav .lastChild .drop ul a span, .mainNav .lastChild .drop ul li:hover a span, .mainNav .lastChild .drop ul li.hover a span {
+	background: none;
+}
+.mainNav .drop ul li:hover a span, .mainNav .drop ul li.hover a span, .mainNav .drop ul li.active a span, .mainNav .drop ul li:active a span {
+	background-position: 200px -619px
+}
+/* Main Navigation drop down Tabs */
+.mainNav .drop ul.tabset {
+	border: none;
+	width: 651px;
+	height: 45px;
+}
+.mainNav .drop ul.tabset li {
+	margin-right: -1px;
+	padding: 0;
+	text-transform: capitalize;
+}
+.mainNav .drop ul.tabset li a {
+	width: 205px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 0 0 12px;
+	background: url(<%=asset_path "bg/bg_navDropTabMenu.jpg"%>) no-repeat;
+	text-align: left;
+	font-weight: bold;
+	color: #fff;
+}
+.mainNav .drop ul.tabset li a:hover {
+	background-position: 0 -45px;
+}
+.mainNav .drop ul.tabset li a:active {
+	background-position: 0 -90px;
+}
+.mainNav .drop ul.tabset li.active a {
+	background-position: 0 -135px;
+}
+.mainNav .drop ul.subTabset {
+	float: left;
+	width: 244px;
+}
+.mainNav .drop ul.subTabset li:first-child a {
+	background: none;
+}
+.mainNav .drop ul.subTabset li.active a {
+	color: #00cccc;
+}
+.mainNav .tabBoxB, .mainNav .tabBoxC, .mainNav .tabBoxD {
+	float: left;
+	width: 381px;
+	padding: 9px 13px 0 13px;
+}
+.mainNav .tabBox4 .infoTabText p {
+	margin-bottom: 13px;
+}
+.mainNav .tabBox4 .infoTabText h3 {
+	font-size: 12px;
+	margin: 13px 0 4px;
+}
+.mainNav .tabBox4 .infoTabText li {
+	padding: 0;
+}
+.mainNav .tabBox4 .infoTabText li a {
+	background: none;
+}
+.mainNav .tabBox4 .infoTabText li a {
+	display: inline;
+	color: #00cccc;
+	padding-right: 14px;
+	text-decoration: none;
+	background: url(<%=asset_path "icn/icn_arrow.png"%>) no-repeat 100% 50%;
+}
+.mainNav .tabBox4 .infoTabText .accordionSubList li a {
+	color: #009999;
+}
+.mainNav .tabBox4 .infoTabText li a:hover {
+	text-decoration: underline;
+}
+/* mainNav accordion */
+.mainNav .accordion {
+	font: 100% Arial, Helvetica, sans-serif;
+}
+.mainNav .accordion li {
+	border: none;
+	display: block;
+	width: 100%;
+}
+.mainNav .accordion .title {
+	display: block;
+	background: #020202 url(<%=asset_path "bg/config_slide.jpg"%>) repeat-x;
+	padding: 9px 17px;
+	font-size: 95%;
+	line-height: 116%;
+	font-weight: bold;
+	color: #fff;
+	cursor: pointer;
+	margin: 0;
+}
+.mainNav .accordion .ui-state-active {
+	background: #383f3f url(<%=assets_path "bg/config_slide_over.jpg"%>) repeat-x;
+}
+.mainNav .accordion .title span {
+	padding-left: 10px;
+	height: 12px;
+	background: none;
+}
+.mainNav .accordion .title .ui-icon {
+	display: block;
+	background: url(<%=assets_path "icn/icn_arrow_configure_over.png"%>) no-repeat;
+	padding: 0 0 0 18px;
+}
+.mainNav .accordion .ui-state-active .ui-icon {
+	background: url(<%=assets_path "icn/icn_arrow_configure.png"%>) no-repeat
+}
+.mainNav .accordion .text {
+	background: #fff url(<%=assets_path "bg/bg_grad_box.gif"%>) repeat-x;
+	padding: 0 16px 10px;
+	border-radius: 0;
+}
+.mainNav .accordion .text p {
+	font-size: 95%;
+	line-height: 127%;
+	color: #099;
+	margin: 18px 0 0;
+}
+.mainNav .accordion .text ul {
+	padding: 10px 0 0
+}
+.mainNav .accordion .text ul li {
+	line-height: 23px;
+}
+.mainNav .accordion .text ul ul {
+	padding: 3px 0 0;
+	margin: 0 0 -3px;
+}
+.mainNav .accordion .text ul ul li {
+	border-top: none;
+	padding-left: 20px;
+}
+.mainNav .accordion .text li:first-child {
+	border-top: none
+}
+.mainNav .accordion .text li.active a {
+	color: #333
+}
+.mainNav .accordion .text li.active ul a {
+	color: #099
+}
+/* Main Nav drop down second level right side pop up */
+.mainNav .drop ul li:hover .itemDetails, .mainNav .drop ul li.hover .itemDetails {
+	display: block;
+}
+.itemDetails {
+	position: absolute;
+	white-space: nowrap;
+	left: 245px;
+	top: 0;
+	display: none;
+	vertical-align: top;
+}
+.itemDetails td {
+	vertical-align: top;
+	padding: 0;
+}
+.itemDetailsHold {
+	float: left;
+	padding: 20px 0 25px 20px;
+	background: url(<%=asset_path "bg/drop_c_hold.gif"%>) repeat-x scroll 0 0 #2e2e2e;
+	min-height: 150px;
+	height: auto !important;
+	height: 150px;
+	margin-left: 1px;
+}
+.itemPict {
+	width: 130px;
+	overflow: hidden;
+	margin: 0 20px 0 0;
+}
+.itemPict img {
+	display: block;
+	margin: 0 auto;
+}
+.itemWrap {
+	vertical-align: top;
+	min-width: 224px;
+}
+.itemColumn {
+	overflow: hidden;
+	padding: 7px 0 0;
+}
+.itemColumn strong {
+	display: block;
+	margin: 0 0 4px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+}
+.itemColumn .col {
+	display: inline-block;
+	padding-right: 20px;
+	vertical-align: top;
+}
+.mainNav .itemDetails .itemColumn ul {
+	background: none;
+	width: auto;
+	padding: 0;
+}
+.mainNav .drop .itemDetails a, .mainNav .drop .itemDetails li {
+	display: inline;
+	float: none;
+	margin: 0;
+	padding: 0;
+	background: none;
+	width: auto;
+	height: auto;
+	overflow: visible;
+	color: #0cc;
+	font-weight: normal;
+	text-decoration: none;
+}
+.mainNav .itemDetails .itemColumn li {
+	font-size: 12px;
+	line-height: 14px;
+	padding: 1px 0;
+	display: block;
+	white-space: nowrap;
+}
+.mainNav .itemBrowse {
+	padding: 0 0 5px;
+	margin: -4px 20px 0 0;
+	border-bottom: 1px solid #787878;
+}
+.mainNav .drop .itemDetails .itemBrowse a {
+	font-weight: bold;
+	padding-right: 14px;
+	background: url(<%=asset_path "icn/icn_arrow.png"%>) no-repeat 100% 50%;
+}
+.mainNav .itemDetails .itemColumn a, .mainNav .drop ul li:hover .itemDetails a, .mainNav .drop ul li.hover .itemDetails a {
+	padding-right: 14px;
+	text-decoration: none;
+	background: url(<%=asset_path "icn/icn_arrow.png"%>) no-repeat 100% 50%;
+}
+.mainNav .itemBrowse a:hover, .mainNav .itemDetails .itemColumn a:hover, .mainNav .drop ul li:hover .itemDetails a:hover, .mainNav .drop ul li.hover .itemDetails a:hover {
+	text-decoration: underline;
+}
+/* main */
+#main {
+	margin: 0 0 70px;
+	min-width: 998px;
+	position: relative;
+	z-index: 5;
+}
+.mainMargin {
+	/* use if page doesn't have portlets that create the top margin */
+	margin-top: 0px !important;
+}
+.mainFrame {
+	background: url(<%=asset_path "bg/main_frame.gif"%>) repeat-y 671px 0;
+}
+/* site index */
+.siteIndex {
+	width: 980px;
+	margin-bottom: 36px;
+	background: url(<%=asset_path "bg/bg_siteIndex.png"%>) repeat-y;
+}
+.siteIndex ul {
+	float: left;
+	width: 205px;
+	padding: 8px 20px;
+}
+.siteIndex li a {
+	width: 100%;
+	font-size: 12px;
+	line-height: 24px;
+	color: #666;
+}
+.siteIndex li.siteIndexPrimary a {
+	font-weight: bold;
+}
+/* footer */
+.footerWrap {
+	width: 100%;
+	z-index: 9999;
+	background: #282828 url(<%=asset_path "bg/footer.gif"%>) repeat-x;
+	border-bottom: 1px solid #7f7f7f;
+	border-top: 1px solid #454545;
+}
+.footerHold {
+	background: url(<%=asset_path "bg/footer_center.gif"%>) no-repeat 50% 0;
+}
+#footer {
+	margin: 0 auto;
+	height: 24px;
+	padding: 4px 0 10px;
+	overflow: visible;
+	position: relative;
+	color: #fff;
+	background: url(<%=asset_path "bg/bg_logo_symbol_28x25.png"%>) no-repeat 50% 50%;
+	font-size: 11px;
+}
+#footer ul.footerNav {
+	float: left;
+	width: 70%;
+}
+#footer ul.footerLegal {
+	float: right;
+}
+#footer ul li {
+	float: left;
+	display: inline;
+	line-height: 12px;
+	padding: 8px 12px 4px;
+	position: relative;
+	background: url(<%=asset_path "bg/nav_lang_sep.gif"%>) no-repeat 0 10px;
+}
+#footer ul li:first-child, #footer ul.social li {
+	background: none;
+}
+#footer li a {
+	color: #00cccc;
+}
+#footer ul.social li {
+	padding: 6px;
+}
+#footer .social a {
+	float: left;
+	width: 16px;
+	height: 16px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(<%=asset_path "bg/bg_social_sprite.png"%>) no-repeat;
+}
+#footer .social .linkedin {
+	background-position: 0 0;
+}
+#footer .social .twitter {
+	background-position: -16px 0;
+}
+#footer .social .youtube {
+	background-position: -34px 0;
+}
+#footer .social .facebook {
+	background-position: -51px 0;
+}
+#footer .social .linkedin:hover {
+	background-position: 0 -16px;
+}
+#footer .social .twitter:hover {
+	background-position: -16px -16px;
+}
+#footer .social .youtube:hover {
+	background-position: -34px -16px;
+}
+#footer .social .facebook:hover {
+	background-position: -51px -16px;
+}
+/* footer bookmarks */
+#footer .iconBookmarks {
+	padding: 0;
+	z-index: 21;
+}
+#footer .iconBookmarks a {
+	display: block;
+	width: 12px;
+	height: 12px;
+	font-size: 0;
+	text-indent: 9999px;
+	background: url(<%=asset_path "icn/icn_footer_bookmarks.png"%>) no-repeat 0 70%;
+	overflow: hidden;
+	padding: 10px 8px 0 8px;
+}
+/* footer local */
+#footer li.footerLocalTime {
+	padding: 6px 10px 0;
+}
+#footer li.footerLocalChange:hover {
+	background: url(<%=asset_path "bg/bg_localChange_drop.png"%>) no-repeat -621px -115px;
+}
+#footer li.footerLocalChange a.icnLocalChange {
+	background: url(<%=asset_path "icn/icn_arrow_up.png"%>) no-repeat 97% 10px;
+	padding: 6px 17px 7px 0;
+	font-weight: normal;
+}
+#footer li.footerLocalChange a.icnLocalChange:hover {
+	text-decoration: none;
+}
+/* footer local fly-out */
+.footerLocalChange .drop {
+	position: absolute;
+	bottom: 22px;
+	left: 0;
+	width: 207px;
+	z-index: 999;
+	visibility: hidden;
+}
+.footerLocalChange:hover .drop {
+	visibility: visible;
+}
+.footerLocalChange .drop .t {
+	background: url(<%=asset_path "bg/bg_localChange_drop.png"%>) no-repeat;
+	height: 146px;
+	overflow: hidden;
+}
+.footerLocalChange .drop .c {
+	background: url(<%=asset_path "bg/bg_localChange_drop.png"%>) repeat-y -207px 0;
+}
+.footerLocalChange .drop .b {
+	background: url(<%=asset_path "bg/bg_localChange_drop.png"%>) no-repeat -414px -137px;
+	height: 9px;
+	overflow: hidden;
+}
+.footerLocalChange .drop .container {
+	float: left;
+	width: 100%;
+	margin: -138px 0 0;
+	position: relative;
+}
+#footer ul li.footerLocalChange .drop ul li {
+	background: none;
+	line-height: 16px;
+	width: 183px;
+}
+#footer ul li.footerLocalChange .drop ul li span {
+	position: absolute;
+	right: 10px;
+	top: 0;
+}
+#footer ul li.footerLocalChange .drop li a {
+	padding: 2px 8px 3px 0;
+	font-weight: normal;
+}
+.footerLocalChange .drop li a:hover {
+	text-decoration: underline;
+}
+/* global error message bottom */
+
+.errorMessageDown {
+	position: absolute;
+	top: auto;
+	left: 50%;
+	margin: 6px 0 6px -69px;
+	width: 137px;
+	display: none;
+}
+.error .errorMessageDown {
+	display: block;
+}
+.errorMessageDown .t {
+	background: url(<%=asset_path "bg/bg_error_message_down.png"%>) no-repeat;
+	height: 10px;
+	overflow: hidden;
+}
+.errorMessageDown .c {
+	padding: 7px 10px 8px;
+	text-align: center;
+	background: url(<%=asset_path "bg/bg_error_message_down.png"%>) repeat-y 100% 0;
+	border-bottom: 2px solid #cc0001;
+	font-weight: bold;
+	color: #333;
+	font-size: 12px;
+	line-height: 14px;
+}
+/* global error message top */
+
+.errorMessageTop {
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	width: 137px;
+	margin: 6px 0 6px -69px;
+	display: none;
+}
+.error .errorMessageTop {
+	display: block;
+}
+.errorMessageTop .b {
+	background: url(<%=asset_path "bg/bg_error_message_top.png"%>) no-repeat 100% 0;
+	height: 10px;
+	overflow: hidden;
+}
+.errorMessageTop .c {
+	padding: 7px 10px 8px;
+	text-align: center;
+	background: url(<%=asset_path "bg/bg_error_message_top.png"%>) repeat-y;
+	border-top: 2px solid #cc0001;
+	font-weight: bold;
+	color: #333;
+	font-size: 12px;
+	line-height: 14px;
+}
+/* Newly Added for Header-Footer Seperation */
+.dropTable td {
+	vertical-align: top;
+	color: #fff;
+	border-bottom: 1px solid #777;
+}
+.dropTable td.none {
+	vertical-align: top;
+	color: #fff;
+	border: 0px;
+}
+.hrNav .drop .dropTable a {
+	width: 232px;
+	padding: 8px 4px;
+	display: block;
+	line-height: 18px;
+}
+.dropTable a {
+	width: 240px;
+	padding: 8px 4px;
+	display: block;
+	line-height: 10px;
+}
+.dropTable-new a {
+	width: 300px;
+	display: block;
+	line-height: 23px;
+	padding: 5px 5px 0px 0px;
+}
+.dropTable-new a:hover {
+	color: #006666;
+}
+.dropTable-new tr {
+	border-bottom: 1px solid #006666;
+}
+.dropTable-new tr.endtags {
+	border-bottom: 0px solid #fff;
+}
+.dropTable td.tableEmptyGap {
+	border: none;
+}
+.dropTable td.tableEmptyGap div {
+	width: 50px;
+	padding: 0;
+}
+.container_12 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 996px;
+}
+.googleLinks.accountHold li {
+	margin-right: 10px;
+	padding-left: 10px;
+	margin-top: 10px;
+	border-right: none;
+}
+.googleLinks.accountHold li:first-child {
+	border: none;
+}
+.googleLinks.accountHold .accountInfo {
+	background: url(<%=asset_path "icn/icn_arrow_down_sprite.png"%>) no-repeat -164px -7px;
+}
+.googleLinks.accountHold li:leftAccountInfo {
+}

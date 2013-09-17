@@ -1,0 +1,25 @@
+<h1>Listing drive_summaries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @drive_summaries.each do |drive_summary| %>
+      <tr>
+        <td><%= link_to 'Show', drive_summary %></td>
+        <td><%= link_to 'Edit', edit_drive_summary_path(drive_summary) %></td>
+        <td><%= link_to 'Destroy', drive_summary, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Drive summary', new_drive_summary_path %>

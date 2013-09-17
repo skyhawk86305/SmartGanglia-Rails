@@ -1,0 +1,17 @@
+<%= form_for(@drive_summary) do |f| %>
+  <% if @drive_summary.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@drive_summary.errors.count, "error") %> prohibited this drive_summary from being saved:</h2>
+
+      <ul>
+      <% @drive_summary.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

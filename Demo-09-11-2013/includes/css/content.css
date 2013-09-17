@@ -1,0 +1,145 @@
+/* CSS Document */
+/* This style sheet contain styles for the content area */
+
+.myseagate {
+	background:url("../images/site_bg.jpg") repeat-x scroll 0 0 transparent
+}
+#holder1 {
+	float:left;
+	position:relative;
+	width:603px;
+	height:100%;
+	margin-top:25px;
+}
+#holder2 {
+	float:left;
+	position:relative;
+	height:360px;
+	margin-top:10px;
+	margin-right:10px;
+}
+#holder3 {
+	float:left;
+	position:relative;
+	width:280px;
+	height:110px;
+	margin-top:20px;
+	margin-left:25px;
+	border:thin #999999 dashed;
+}
+#inner_hoder {
+	margin:10px;
+}
+#mainContent {
+	width:980px;
+	margin:0px auto;
+	min-height:800px;
+	max-height:100%;
+}
+.grid_42 {
+	display:inline;
+	position:relative;
+}
+.grid_4 {
+	width:316px;
+}
+.omega {
+	margin-top:10px;
+	float:left;
+	margin-right:0;
+}
+.columnsub2 {
+	float:left;
+	width:316px;
+}
+.box {
+	margin:0 -4px 12px 0;
+}
+.box .t {
+	background:url("../images/bg/bg_box_with_shadow_316w.png") no-repeat scroll 0 0 transparent;
+	height:7px;
+	overflow:hidden;
+}
+.clearfix:after {
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	overflow:hidden;
+}
+.box .c {
+	background:url("../images/bg/bg_box_with_shadow_316w.png") repeat-y scroll -330px 0 transparent;
+	padding:0 4px 0 0;
+}
+.box .container {
+	width:100%;
+	position:relative;
+	border-left:1px solid #CCCCCC;
+	float:left;
+	margin:-7px 0 -2px;
+}
+.box .heading {
+	background:url("../images/bg/config_slide_over.gif") repeat-x scroll 0 0 #383F3F;
+	color:#fff;
+	display:block;
+	font-size:12px;
+	line-height:normal;
+	padding:10px 10px 10px 9px;
+}
+.box .content {
+	color:#666666;
+	background:none repeat scroll 0 0 transparent;
+}
+.box .content2 {
+	color:#666666;
+	background:none repeat scroll 0 0 transparent;
+	height:350px;
+}
+a.quick {
+	margin:15px;
+}
+.ootbPortlet {
+	width:270px;
+}
+.box .b {
+	background:url("../images/bg/bg_box_with_shadow_316w.png") no-repeat scroll -660px 0 transparent;
+	height:7px;
+	overflow:hidden;
+}
+li.book{
+	line-height:30px;
+}
+.tabs ul {
+	border-top: 1px solid #CCCCCC;
+	margin: 0;
+	position: relative;
+	width: 100%;
+	z-index: 6;
+}
+.tabs li {
+	width: 159px;
+	list-style:none;
+	display:inline;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #DDDDDD;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.tabs a {
+	width: 132px;
+	float: left;
+	height: 25px;
+	margin: 0 0 -8px;
+	outline: medium none;
+	padding: 12px 14px 8px;
+	position: relative;
+	text-align: center;
+	display:inline-block;
+}
+.tabs a.active {
+	width: 132px;
+	background: url("../images/bg/tabset_el.png") no-repeat scroll 50% -46px transparent;
+	color: #fff;
+}

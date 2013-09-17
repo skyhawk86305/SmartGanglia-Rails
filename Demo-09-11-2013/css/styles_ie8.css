@@ -1,0 +1,6 @@
+/* This style sheet used for IE8 compatibility */
+
+.clearfix, .wrap, .row, .hold, #main,
+#content, #sidebar, #header, #footer {
+	zoom: 1;
+}

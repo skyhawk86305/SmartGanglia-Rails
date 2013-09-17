@@ -1,0 +1,25 @@
+<h1>Listing system_summaries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @system_summaries.each do |system_summary| %>
+      <tr>
+        <td><%= link_to 'Show', system_summary %></td>
+        <td><%= link_to 'Edit', edit_system_summary_path(system_summary) %></td>
+        <td><%= link_to 'Destroy', system_summary, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New System summary', new_system_summary_path %>

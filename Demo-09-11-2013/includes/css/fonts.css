@@ -1,0 +1,37 @@
+/* This CSS Contains basic Font Styles*/
+
+h1 {
+	color: #333333;
+	font-size: 1.6em;
+	font-weight: normal;
+}
+h2 {
+	color: #333333;
+	font-size: 1.1em;
+	font-weight: normal;
+}
+p {
+	color: #333333;
+	font-size: 0.9em;
+	font-weight: normal;
+	line-height: 1.5;
+}
+p.datetime {
+	color: #999999;
+	font-size: 0.85em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	width: 100%;
+}
+a.tale {
+	color: #1A8686;
+	font-size: 0.9em; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	outline: none;
+}
+a:hover.tale {
+	text-decoration: underline;
+}
+
